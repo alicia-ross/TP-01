@@ -1,0 +1,30 @@
+footer {
+    background-color: rgb(47, 47, 70); /* Couleur de fond */
+    padding: 20px 0; /* Espacement intérieur haut et bas */
+    text-align: center; /* Centrer le contenu */
+    margin-top: 6rem;
+}
+
+/* Contenu du footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    gap: 1rem;
+}
+
+/* Style de l'image du logo */
+.footer-content img {
+    width: 150px; /* Taille de l'image */
+    margin-right: 10px; /* Marge à droite de l'image */
+}
+
+.footer-content p {
+    margin: 0;
+    color: #f0f0f0;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}

@@ -1,0 +1,19 @@
+.logo {
+    width: 300px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem 5rem 2rem;
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+header {
+    background-image: url(../images/wp2394190-anime-sky-wallpapers\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

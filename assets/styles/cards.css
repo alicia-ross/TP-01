@@ -1,0 +1,121 @@
+.grid-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.grid-container.single-column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #555;
+    margin: 0 0 20px;
+}
+
+.card button {
+    padding: 12px 24px;
+    background-color:#f0f0f0;
+    color: rgb(47, 47, 70);
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    width: 100%;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.card button:hover {
+    background-color:rgb(47, 47, 70);
+    color: #f0f0f0;
+    border: none;
+}
+
+#toggle-view-btn {
+    font-size: 14px;
+    background-color: rgb(47, 47, 70);
+    color: #f0f0f0;
+}
+
+#toggle-view-btn:hover {
+    background-color:#f0f0f0;
+    color: rgb(47, 47, 70);
+}
+
+#search-input {
+    padding: 10px;
+    font-size: 14px;
+    width: 250px;
+    max-width: 100%;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.inputs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 4rem;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .grid-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+    }
+    .grid-container.single-column {
+        grid-template-columns: 1fr;
+        width: 50%;
+    }
+}

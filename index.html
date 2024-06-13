@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/search.js" defer></script>
+    <script src="./assets/js/dialog.js" defer></script>
+    <script src="./assets/js/scroll.js" defer></script>
+    <title>Films Studio Ghibli</title>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <img class="logo" src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png" alt="Ghibli Logo">
+        </section>
+        <section class="banner">
+            <picture>
+                <source media="(min-width:1024px)" srcset="./assets/images/kiki.png"> 
+                <img class="banner-image" src="./assets/images/Tumblr_myjo10YJJz1sgxh69o1_500.webp" alt="">
+            </picture>
+            <div class="banner-left">
+                <p class="banner-text">Bienvenue dans l'univers magique des films Studio Ghibli. Découvrez des histoires merveilleuses, des personnages attachants et des paysages enchanteurs.</p>
+                <button id="bouton-defilement">Découvrir l'univers Ghibli</button>
+            </div>
+        </section>
+    </header>
+    <main id="contenu-principal">
+        <h1>Les films Studio Ghibli</h1>
+        <div class="inputs-container">
+            <button id="toggle-view-btn">Changer la vue</button>
+            <input type="text" id="search-input" placeholder="Recherche">
+            <div id="card-count"></div>
+        </div>
+        <div class="grid-wrapper">
+            <div class="grid-container" id="grid-container"></div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="titre"></h2>
+                <img id="image" src="" alt="Image">
+                <p>Auteur: <span id="auteur"></span></p>
+                <p>Date de création: <span id="date"></span></p>
+                <p>Nombre de mots: <span id="mots"></span></p>
+                <p>Durée: <span id="temps"></span></p>
+                <p id="description"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <img src="https://www.studioghibli.com.au/wp-content/uploads/2017/07/ghibli_logo_white-1.png" alt="Ghibli Logo">
+            <p>Alicia Ross</p>
+            <p>PMI - 2024</p>
+        </div>
+    </footer>
+</body>
+</html>

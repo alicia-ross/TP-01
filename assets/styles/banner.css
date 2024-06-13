@@ -1,0 +1,80 @@
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.banner-image {
+    max-width: 300px;
+}
+
+.banner-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 38rem;
+}
+
+.banner-text {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: normal;
+    max-width: 700px;
+    color: #f0f0f0;
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:#f0f0f0;
+    color: rgb(47, 47, 70);
+    font-size: 0.8rem;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+button:hover {
+    background-color:rgb(47, 47, 70);
+    color: #f0f0f0;
+    border: none;
+}
+
+@media screen and (min-width:1024px){
+    .banner {
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-height: 450px;
+        padding: 0 1rem 0 0;
+    }
+
+    .banner-image {
+        max-width: 600px;
+    }
+
+    .banner-text {
+        font-size: 1.3rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
