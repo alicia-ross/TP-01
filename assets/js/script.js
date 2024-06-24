@@ -15,7 +15,10 @@ class Article {
         this.modalDescription = modalDescription;
     }
 
+    /** Cool technique */
+
     /**
+     * @function fromData
      * @param {object} data - Données de l'article
      * @param {string} data.image - URL de l'image de l'article
      * @param {string} data.title - Titre de l'article
@@ -141,7 +144,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const articles = articleData.map(Article.fromData);
     const gridContainer = document.getElementById('grid-container');
 
-    articles.forEach((article, index) => {
+    /** index n'est pas utilisé */
+    articles.forEach((article) => {
         const card = document.createElement('div');
         card.className = 'card';
 

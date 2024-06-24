@@ -16,18 +16,20 @@ document.addEventListener('DOMContentLoaded', () => {
             cardCount.textContent = `${visibleCards} film(s)`;
         };
 
+        /** JS Doc inutile */
+
         /**
          * Toggle entre l'affichage en colonne et l'affichage en grille
-         * @param {Event} event - L'événement clic
          */
 
         toggleButton.addEventListener('click', () => {
             gridContainer.classList.toggle('single-column');
         });
 
+        /** JS Doc inutile */
+
         /**
          * Filtre les cartes en fonction de la valeur de recherche entrée
-         * @param {Event} event - L'événement d'entrée
          */
 
         searchInput.addEventListener('input', () => {
