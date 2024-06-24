@@ -15,8 +15,11 @@ class Article {
         this.modalDescription = modalDescription;
     }
 
+    /** Cool technique */
+
     /**
-     * @param {Article} data - Données de l'article
+     * @function fromData
+     * @param {object} data - Données de l'article
      * @param {string} data.image - URL de l'image de l'article
      * @param {string} data.title - Titre de l'article
      * @param {string} data.description - Description de l'article
@@ -28,8 +31,6 @@ class Article {
      * @param {string} [data.modalDescription] - Description pour le dialog
      * @return {Article} Un nouvel article.
      */
-
-    /** Cool technique */
 
     static fromData(data) {
         return new Article(data.image, data.title, data.description, data.auteur, data.date, data.tempsEstime, data.mots, data.modalImage, data.modalDescription);
