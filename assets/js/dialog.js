@@ -13,7 +13,7 @@ function showModal(article) {
     const modalTemps = document.getElementById('temps');
     const modalDescription = document.getElementById('description');
 
-    const modalClose = document.querySelector('.close');
+    /** modalClose n'est jamais utilié */
 
     modalTitle.textContent = article.title;
     modalImage.src = article.modalImage;
@@ -23,6 +23,7 @@ function showModal(article) {
     modalTemps.textContent = article.tempsEstime;
     modalDescription.textContent = article.modalDescription;
 
+    /** J'aurais prefere que tu utilise un classe css */
     modal.style.display = 'block';
 }
 

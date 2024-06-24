@@ -16,7 +16,7 @@ class Article {
     }
 
     /**
-     * @param {object} data - Données de l'article
+     * @param {Article} data - Données de l'article
      * @param {string} data.image - URL de l'image de l'article
      * @param {string} data.title - Titre de l'article
      * @param {string} data.description - Description de l'article
@@ -28,6 +28,8 @@ class Article {
      * @param {string} [data.modalDescription] - Description pour le dialog
      * @return {Article} Un nouvel article.
      */
+
+    /** Cool technique */
 
     static fromData(data) {
         return new Article(data.image, data.title, data.description, data.auteur, data.date, data.tempsEstime, data.mots, data.modalImage, data.modalDescription);
@@ -141,7 +143,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const articles = articleData.map(Article.fromData);
     const gridContainer = document.getElementById('grid-container');
 
-    articles.forEach((article, index) => {
+    /** index n'est pas utilisé */
+    articles.forEach((article) => {
         const card = document.createElement('div');
         card.className = 'card';
 
